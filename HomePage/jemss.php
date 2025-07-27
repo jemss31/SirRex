@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8" />
+    <title>Fortfolio</title>
+</head>
+<body>
+    <div style="margin-top: 80px; text-align: center;">
+        <img src="koda.jfif" alt="koda Logo" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin: 25px;" />
+        <img src="think.png" alt="Think" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin: 25px;" />
+        <img src="acc.png" alt="acc Logo" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover; margin: 25px;" />
+        <h1>Ansali, James Sven C.</h1>
+        <p>I CODE FOR FOOD</p>
+        
+        <div style="display: flex; gap: 24px; justify-content: center; margin-top: 32px;">
+            <form style="background: #E0B0FF; padding: 24px 18px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); min-width: 200px;">
+                <label for="input1" style="color: #fff;">Project 1:</label>
+               
+                
+            </form>
+            <form style="background: #E0B0FF; padding: 24px 18px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.12); min-width: 200px;">
+                <label for="input2" style="color: #fff;">Project 2:</label>
+            </form>
+
+        </div>
+    </div>
+                <div style="margin-top: 80px; text-align: center;">
+
+                <p>Contact Info:</p>
+                <p>
+        <a href="https://www.facebook.com/jamessven.ansali">JAMES SVEN ANSALI</a>
+    </p>
+                <ul>
+                    
+                </ul>
+            </div>
+</body>
+</html>
