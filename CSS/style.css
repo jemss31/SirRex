@@ -1,0 +1,185 @@
+/* ========== Reset & Base Styles ========== */
+* {
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;line-height: 1.6;background-color: #f9f9f9;color: #222;
+}
+
+/* ========== Header ========== */
+.sticky-nav {
+  background-color: #b8a6da;color: #fff;position: sticky;top: 0;width: 100%;z-index: 999;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav-container {
+  max-width: 1200px;margin: auto;display: flex;align-items: center;justify-content: space-between;padding: 15px 20px;flex-wrap: wrap;
+}
+
+/* Logo Section */
+.sticky-nav-logo {
+  display: flex;align-items: center;gap: 10px;font-size: 1.2rem;font-weight: bold;color: #020202;
+}
+
+.nav-logo-img {
+  width: 45px;height: 45px;border-radius: 50%;object-fit: cover;
+}
+
+/* Nav Menu */
+.sticky-nav-menu ul {
+  display: flex;list-style: none;gap: 25px;
+}
+
+.sticky-nav-menu ul li a {
+  text-decoration: none; color: #000000;transition: color 0.3s ease;
+}
+
+.sticky-nav-menu ul li a:hover,
+.sticky-nav-menu ul li a.active {
+  color: #000000;
+}
+
+/* Hamburger Button */
+.sticky-nav-toggle {
+  display: none;background: none;border: none;color: #000000;font-size: 1.5rem;cursor: pointer;
+}
+
+/* ========== Main Content ========== */
+.main-pictures {
+  position: relative; background-color: #b8a6da;  background-image: url('../Images/Particle\ wave\ with\ depth.gif'); background-size: cover;  background-position: center;  background-repeat: no-repeat;  border-radius: 12px;  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  padding: 60px 10%; margin: 40px 10%;
+
+  display: flex; align-items: center;justify-content: flex-start;gap: 30px;text-align: left;flex-wrap: nowrap;flex-shrink: 0;
+}
+
+
+.main-pictures::before {
+  content: "";position: absolute;inset: 0;background-color: rgba(0, 0, 0, 0.3); border-radius: 12px; z-index: 0;
+}
+
+
+.main-pictures > * {
+  position: relative; z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .main-pictures {
+    flex-direction: column;align-items: center;text-align: center;flex-wrap: wrap;
+  }
+}
+
+.jemss-logo {
+  max-width: 280px; width: 80%;border-radius: 50%;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.profile-title {font-size: 2.5rem; margin-top: 20px;font-weight: 600;font-family: 'Georgia', serif;color: #fff; 
+}
+
+.profile-desc {
+  font-style: italic;font-size: 1.1rem;margin-top: 10px;color: #eee; max-width: 500px;
+}
+
+
+
+footer [style*="Contact Info"] {
+  margin-top: 60px;text-align: center;font-size: 1rem;color: #b8a6da; 
+}
+
+
+a {
+  color: #0077cc; text-decoration: none;
+}
+
+a:hover { text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
+.pictures-section {
+  padding: 60px 10%;background-color: #f0f0f500;text-align: center; font-family: 'Georgia', serif;
+}
+.pictures-section h2 {
+  font-size: 2.5rem;margin-bottom: 30px;color: #333;
+}
+.pictures-gallery {
+  display: flex;flex-wrap: wrap;justify-content: center;gap: 30px;
+}
+.pictures-gallery img {
+  width: 300px;height: auto;border-radius: 10px;object-fit: cover;box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); border: 8px solid #fff; transition: transform 0.3s, box-shadow 0.3s;
+}
+.pictures-gallery img:hover {
+  transform: scale(1.05);box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .pictures-gallery img {
+    width: 100%;max-width: 90%;height: auto;
+  }
+}
+.songs-section {
+  padding: 60px 10%;background-color: #f0f0f500;text-align: center;
+}
+
+.songs-section h2 {
+  font-size: 2.5rem;margin-bottom: 30px;color: #33333300;font-family: 'Georgia', serif;
+}
+
+.songs-list {
+  display: flex;flex-wrap: wrap;justify-content: center;gap: 30px;
+}
+
+.song-card {
+  width: 300px;background-color: #ffffff00;border: 8px solid #ffffff00;border-radius: 10px;box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);overflow: hidden;text-align: center;padding: 15px;transition: transform 0.3s ease, box-shadow 0.3s ease;cursor: pointer;
+}
+
+.song-card:hover {
+  transform: scale(1.05);box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.song-cover {
+  width: 100%;height: auto;border-radius: 8px; object-fit: cover;margin-bottom: 10px;
+}
+
+.song-info p {
+  font-size: 1.1rem;font-weight: 600;color: #333;margin: 0;
+}
+
+html {  scroll-behavior: smooth;  scroll-padding-top: 120px;
+}
+
+body {
+  background-image: url('../Images/v915-wit-005-b.jpg'); /* update the path if needed */background-size: cover;        /* ensures the image covers the whole body */background-position: center;   /* centers the image */background-repeat: no-repeat;  /* prevents repeating */background-attachment: fixed;  /* keeps the background fixed while scrolling */font-family: Arial, sans-serif;margin: 0;padding: 0;
+}
+.footer {
+  background: linear-gradient(135deg, #3a3a4f, #1c1c2b);color: #fff;padding: 40px 10%;font-family: 'Segoe UI', sans-serif;margin-top: 80px;
+}
+
+.footer-container {
+  text-align: center;font-family: 'Georgia', serif;
+}
+
+.footer h3 {font-size: 1.6rem;margin-bottom: 20px;color: #f1f1f1;
+}
+
+.footer-links {
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: #ddd;margin: 0 15px;text-decoration: none;font-size: 1rem;transition: color 0.3s ease;
+}
+
+.footer-links a i {
+  margin-right: 8px;
+  color: #f2f2f2;
+  
+}
+
+.footer-links a:hover {
+  color: #00acee;
+}
+
+.footer p {
+  font-size: 0.9rem;color: #bbb;
+}
+html {
+  scroll-behavior: smooth;}
+
